@@ -1,0 +1,133 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+a {
+    color: #0289ff;
+    text-decoration: none;
+}
+a:hover {
+    color: #025399;
+}
+.profile-card {
+    background: #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.card-body {
+    width: auto;
+    z-index: 1;
+}
+.card-data {
+    width: 320px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #4bc48a;
+    z-index: 0;
+}
+.image-area {
+    background: #56d598;
+    padding: 12px;
+    border-radius: 10px 10px 0px 30px;
+}
+.image {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid aliceblue
+}
+.profile-img {
+    background-image: url(shahadat.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+}
+.profile-img:hover {
+    transform: scale(1.5);
+}
+.Profile h1 {
+    font-family: Arial;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contents {
+    position: relative;
+    background: #fff;
+    border-radius: 0 30px 10px 10px;
+    padding: 15px;
+  }
+  .contents:before {
+    background: #56d598;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    content: "";
+    z-index: -1;
+  }
+.title {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+.contact ul {
+    list-style: none;
+    line-height: 1.5;
+    margin: 0;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+    font-size: 110%;
+    color: #0289ff;
+}
+.view-more {
+    text-decoration: none;
+    padding: 6px 12px;
+    background: #56d598;
+    display: inline-block;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.view-more:hover {
+    background: #4bc48a;
+    color:#ffffff;
+}   
+.card-data:before {
+    background: url(circle-bg-c7f9545f.svg) no-repeat;
+    content: "";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -150px;
+    top: -150px;
+    background-size: 300px 300px;
+    z-index: -1;
+}
+.card-body::after {
+    background: url(shape-4aa4972b.svg) no-repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    rotate: 180deg;
+    width: 500px;
+    background-size: cover;
+    height: 600px;
+    opacity: 0.5;
+    z-index: -1;
+}
